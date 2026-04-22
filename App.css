@@ -1,0 +1,128 @@
+/* App.css - Compact Responsive Version */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 10px;
+}
+
+.logo {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form-box {
+  max-width: 420px;
+  margin: auto;
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-box h2 {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 10px;
+  margin: -25px -20px 20px;
+  border-radius: 15px 15px 0 0;
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group {
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 13px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.dob {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+.form-footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 600px) {
+
+  .form-box {
+    padding: 20px 15px;
+  }
+
+  .form-box h2 {
+    font-size: 18px;
+    margin: -20px -15px 15px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .dob {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 9px;
+  }
+}
